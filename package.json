@@ -1,0 +1,14 @@
+{
+  "name": "formCache",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.4.0",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.1",
+    "eslint-config-google": "^0.14.0"
+  }
+}

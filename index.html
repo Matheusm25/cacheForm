@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Form cache</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+
+      <div class="form-group">
+
+        <label for="name">COLOQUE SEU NOME:</label>
+        <input type="text" name="name" id="name" class="form-control">
+        
+        <label for="weight">COLOQUE SEU peso:</label>
+        <input type="text" name="weight" id="weight" class="form-control">
+      
+        <label for="age">COLOQUE SUA IDADE:</label>
+        <input type="text" name="age" id="age" class="form-control">
+      
+      </div>
+
+
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  <script src="./index.js"></script>
+
+  <script>
+    addCacheField('name');
+    addCacheField('age');
+  </script>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
