@@ -1,4 +1,26 @@
 window.onload = function() {
+  loadCache();
+};
+
+/**
+ * Add cache for specified field
+ * @param {string} id id of the field that will be in cache
+ */
+function addCacheField(id) {
+  const e = document.querySelector('#' + id);
+
+  if (e) {
+    e.addEventListener('blur', function( event ) {
+      const value = e.value;
+      localStorage.setItem(id, value);
+    }, true);
+  }
+}
+
+/**
+ * Load the values stored in the localStorage
+ */
+function loadCache() {
   const SIZE = localStorage.length;
 
   const objs = [];
@@ -16,20 +38,5 @@ window.onload = function() {
     if (e) {
       e.value = objs[i].value;
     }
-  }
-};
-
-/**
- * Add cache for specified field
- * @param {string} id id of the field that will be in cache
- */
-function addCacheField(id) {
-  const e = document.querySelector('#' + id);
-
-  if (e) {
-    e.addEventListener('blur', function( event ) {
-      const value = e.value;
-      localStorage.setItem(id, value);
-    }, true);
   }
 }
