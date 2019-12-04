@@ -40,3 +40,11 @@ function loadCache() {
     }
   }
 }
+
+/**
+ * Clear the cache of specified fields
+ * @param {any} fields fields that will have their value cleared
+ */
+function clearCache(...fields) {
+  fields.map((field) => localStorage.removeItem(field));
+}
